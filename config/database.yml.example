@@ -52,3 +52,14 @@ production:
   database: lab_sample_tracker_production
   username: lab_sample_tracker
   password: <%= ENV['LAB_SAMPLE_TRACKER_DATABASE_PASSWORD'] %>
+
+healthdata:
+  adapter: mysql
+  encoding: utf8
+  pool: 5
+  username: root
+  password: root
+  database: doctor
+  socket: /var/run/mysqld/mysqld.sock
+
+
