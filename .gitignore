@@ -16,3 +16,5 @@ tmp/*
 tmp/pids/*
 public/assets/*
 config/secrets.yml
+*.pid
+*.pid.lock
