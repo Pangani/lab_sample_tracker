@@ -14,4 +14,4 @@ LabParameter.establish_connection(healthdata)
 TableLabResultList.establish_connection(healthdata)
 TableLabResult.establish_connection(healthdata)
 LabSample.establish_connection(healthdata)
-
+Clinician.establish_connection(healthdata)

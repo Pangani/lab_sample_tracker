@@ -1,2 +1,9 @@
-<h1>User#login</h1>
-<p>Find me in app/views/user/login.html.erb</p>
+<h1>Enter user code</h1>
+<%= form_tag("/login", id: "login-form", method: 'post', enctype: 'multipart/form-data') do %>
+<table>  
+  <tr>
+    <td><input type="password" name="usercode" /></td>
+    <td><input type="submit" value="Login" /><td>
+  </tr>
+</table>
+<%end%>

@@ -41,6 +41,7 @@
                         Lab Sample Tracker
                     </a>
                 </li>
+                <%unless session[:user_code].blank?%>
                 <li>
                     <a href="#">Dashboard (Home)</a>
                 </li>
@@ -62,6 +63,13 @@
                 <li>
                     <a href="#">Contact</a>
                 </li>
+                <li>
+                    &nbsp;
+                </li>
+                <li>
+                    <a href="/user/login">Logout</a>
+                </li>
+                <%end%>
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->

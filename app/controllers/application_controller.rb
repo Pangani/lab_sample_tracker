@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   private
 
   def check_with_user_has_loggedin
-    if session[:user_id].blank?
+    if session[:user_code].blank?
       redirect_to '/user/login'
     end
   end
