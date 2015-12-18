@@ -1,9 +1,11 @@
 <h1>Enter user code</h1>
-<%= form_tag("/login", id: "login-form", method: 'post', enctype: 'multipart/form-data') do %>
-<table>  
-  <tr>
-    <td><input type="password" name="usercode" /></td>
-    <td><input type="submit" value="Login" /><td>
-  </tr>
-</table>
+
+<%= form_tag("/login", id: "login-form", method: 'post') do %>
+	<table>  
+	  <tr>
+	    <td><input type="password" name="usercode" placeholder="User ID" /></td><br />
+	    <td><input type="submit" value="Login" class= "btn btn-default btn-primary"/><td>
+	  </tr>
+	</table>
 <%end%>
+<hr />

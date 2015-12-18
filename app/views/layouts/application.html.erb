@@ -10,9 +10,9 @@
     <meta name="author" content="">
 
     <title>LabSampleTracker</title>
-    <%#= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%#= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%#= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
   
     <!-- Bootstrap Core CSS -->
     <%= stylesheet_link_tag 'bootstrap/bootstrap.min' %>
@@ -52,7 +52,7 @@
                     <a href="#">Dispatch Lab samples</a>
                 </li>
                 <li>
-                    <a href="#">View laboratories list</a>
+                   <%= link_to 'View laboratories list', controller: 'facilities' %><!-- <a href="/facility/index">View laboratories list</a>-->
                 </li>
                 <li>
                     &nbsp;

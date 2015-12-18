@@ -1,8 +1,15 @@
 Rails.application.routes.draw do
+  
+  get 'facilities/index'
+
+  resources :facilities
+
   get 'user/login'
   post '/login' => 'user#login'
 
   get 'home/index'
+
+  #delete 'facility/index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
